@@ -1,0 +1,12 @@
+{
+  "name": "netcafe",
+  "version": "1.0.0",
+  "description": "Deterministic tools for messy real-world data: bank reconciliation without a shared key, Excel that keeps leading zeros and real dates, duplicate-company detection, US HS/HTS codes, and mainland-China reachability. No API key needed to start.",
+  "author": {
+    "name": "AI NetCafe",
+    "url": "https://ainetcafe.com"
+  },
+  "homepage": "https://ainetcafe.com/mcp.html",
+  "repository": "https://github.com/mario03690/netcafe-skills",
+  "license": "MIT"
+}

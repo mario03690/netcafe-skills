@@ -2,17 +2,30 @@
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "netcafe",
   "description": "Deterministic tools for messy real-world data — reconciliation, Excel, entity dedupe, HS codes, China reachability.",
-  "version": "1.0.0",
   "owner": {
     "name": "AI NetCafe",
     "url": "https://ainetcafe.com"
   },
-  "metadata": { "pluginRoot": "./plugins" },
   "plugins": [
     {
       "name": "netcafe",
-      "source": "netcafe",
-      "description": "Deterministic tools for messy real-world data: bank reconciliation without a shared key, Excel that keeps leading zeros and real dates, duplicate-company detection, US HS/HTS codes, and mainland-China reachability. No API key needed to start."
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "mario03690/netcafe-skills"
+      },
+      "description": "Deterministic tools for messy real-world data: bank reconciliation without a shared key, Excel that keeps leading zeros and real dates, duplicate-company detection, US HS/HTS codes, and mainland-China reachability. No API key needed to start.",
+      "homepage": "https://ainetcafe.com/mcp.html",
+      "license": "MIT",
+      "keywords": [
+        "reconciliation",
+        "excel",
+        "xlsx",
+        "hs-code",
+        "customs",
+        "china",
+        "deterministic"
+      ]
     }
   ]
 }

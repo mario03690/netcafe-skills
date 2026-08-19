@@ -3,14 +3,28 @@
 An [Agent Skill](https://agentskills.io/) that teaches your agent when to reach for
 deterministic tools instead of estimating over a table.
 
+One skill, one source of truth, four ways to install it.
+
+**Claude Code**
+
 ```
 /plugin marketplace add mario03690/netcafe-skills
 /plugin install netcafe@netcafe
 ```
 
-Or drop `plugins/netcafe/skills/netcafe/SKILL.md` into `~/.claude/skills/netcafe/SKILL.md`.
-The file follows the open Agent Skills standard, so it also works in other tools that read
-`SKILL.md`.
+**Codex** — the repo ships `.codex-plugin/plugin.json` pointing at `./skills/`.
+
+**Gemini CLI** — `.gemini/commands/netcafe.toml` adds a `/netcafe` command.
+
+**OpenCode** — `.opencode/skills` is a symlink to `./skills`, so the skill-driven
+execution model picks it up directly.
+
+**Anything else** — copy `skills/netcafe/SKILL.md` to `~/.claude/skills/netcafe/SKILL.md`
+(or your tool's skills directory). The file follows the open
+[Agent Skills](https://agentskills.io/) standard, which around 40 products now read.
+
+`.opencode/skills` is a symlink rather than a copy on purpose: a stale copy of a skill is
+worse than no skill, because the agent trusts it.
 
 ## What it covers
 

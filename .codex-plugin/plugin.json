@@ -1,0 +1,27 @@
+{
+  "name": "netcafe",
+  "version": "1.0.0",
+  "description": "Deterministic tools for messy real-world data: bank reconciliation without a shared key, Excel that keeps leading zeros and real dates, duplicate-company detection, US HS/HTS codes, and mainland-China reachability. No API key needed to start.",
+  "author": {
+    "name": "AI NetCafe",
+    "url": "https://ainetcafe.com"
+  },
+  "homepage": "https://ainetcafe.com/mcp.html",
+  "repository": "https://github.com/mario03690/netcafe-skills",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI NetCafe",
+    "shortDescription": "Deterministic tools for reconciliation, Excel, entity dedupe, HS codes, and China reachability.",
+    "longDescription": "Hosted deterministic tools with no model call inside: reconcile a bank statement against a ledger with no shared reference number, read and write .xlsx without losing leading zeros or turning dates into serial numbers, find duplicate companies via tax-ID checksums, verify US HS/HTS tariff codes, and measure whether a site is reachable from mainland China. Every result involving counts or money carries an arithmetic self-check computed in code. No API key needed to start.",
+    "developerName": "AI NetCafe",
+    "category": "Productivity",
+    "capabilities": [
+      "Data reconciliation",
+      "Spreadsheet processing",
+      "Entity resolution",
+      "Customs classification",
+      "Network reachability"
+    ]
+  }
+}
