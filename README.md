@@ -26,6 +26,21 @@ execution model picks it up directly.
 `.opencode/skills` is a symlink rather than a copy on purpose: a stale copy of a skill is
 worse than no skill, because the agent trusts it.
 
+## The part that is not another API wrapper
+
+When the same data job comes back for the third or fourth time, the skill stops hand-running
+it and freezes the sequence into a **production line** that runs on the server on a schedule —
+including when your machine is off. Every run leaves a work order with each step's arithmetic
+proof; runs whose checks fail are not billed.
+
+Live examples, no signup, real run history:
+[reachability](https://ainetcafe.com/line/pl_8dc2f234f9d7) ·
+[dirty-data reconciliation](https://ainetcafe.com/line/pl_2f4982aead1f) ·
+[HS classification](https://ainetcafe.com/line/pl_aa842f5afab5)
+
+The division of labour is the point: **your agent designs the flow** — only it has seen your
+data and knows its quirks. **The server keeps running it** — on time, with a receipt.
+
 ## What it covers
 
 | Job | Why not do it inline |
